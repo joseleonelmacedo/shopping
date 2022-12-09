@@ -29,7 +29,6 @@ header{
 }
 
 .conteudo-menu ul li ul{
-    border: solid red 1px;
     float: right;
     margin-left: 10px;
     list-style: none;
@@ -40,12 +39,23 @@ header{
     display: block;
 }
 
+#flag{
+   width: 30px;
+}
 
 .conteudo-menu ul li ul li{
-    border: solid red 1px;
-    margin-top: 10px;
+    margin-top: 5px;
+    padding: 3px;
+    width: 120px;
+    height: 30px;
     display: inline-block;
 }
+
+#idioms p{
+    position: relative;
+    bottom: 30px;
+    left: 35px;
+ }
 
 #a{
     font-size: 13px;
@@ -65,7 +75,7 @@ header{
 
 #barra-de-pesquisa input{
     border-style: none;
-    margin-top: 22px;
+    margin-top: 20px;
     margin-left: 25%;
     border-radius: 3px;
     font-size: 20px;
