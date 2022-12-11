@@ -152,3 +152,12 @@ button:hover{
 a{
     color: rgb(108, 157, 248);
 }
+
+#menu {
+    position: absolute;
+    bottom: 630px;
+    left: 2px;
+    text-decoration: none;
+    color: #dadada;
+    background-color: #11121373;
+}
