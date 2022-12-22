@@ -16,7 +16,6 @@ header{
 }
 #menu_principal{
     height: 90px;
-    margin-top: -20px;
     background-color: rgba(0, 0, 0, 0.445);
     font-family: Arial, Helvetica, sans-serif;    
 }
@@ -92,13 +91,6 @@ header{
     margin-top: 10px;
 }
 
-#oque-é{
-    height: 450px;
-    margin-top: 20px;
-    background-color: rgb(224, 224, 224);
-   
-}
-
 #seções{
     background: rgba(45, 45, 44, 0.27);
     border-radius: 13px;
@@ -145,4 +137,144 @@ header{
     color: rgb(43, 42, 42);
     box-shadow: 13px 0px 23px 2px rgba(0,0,0,0.23);
     
+}
+
+#mercadorias{
+    height: 450px;
+    margin-top: 20px;
+    padding-top: 100px;
+    padding-left: 4px;
+    background-color: rgb(224, 224, 224);
+   
+}
+
+#seçoes{
+    height: 260px;
+    font-family: Arial, Helvetica, sans-serif;    
+}
+
+.titulos h2{
+    width: 100px;
+    border-bottom: 4px solid black;
+}
+
+.cards-conteiner{
+    display:flex;    
+    overflow: hidden;
+
+}
+
+.cards .card .content-card{
+    height: 210px;
+    width: 200px;
+
+}
+
+.main-cards {
+       
+    display: flex;
+    justify-content: space-around;   
+    transition: all 3s ease;
+}
+
+.cards{
+    margin-left: 20px;  
+    margin-top: 5px; 
+    border-radius: 10px;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.button img{
+    width: 40px;
+    height: 50px;
+    opacity: 80%;
+}
+
+.button label{
+    height: 15px;
+    width: 15px;
+}
+
+.button label.one{
+    float: right;
+    margin-top: -150px;
+    margin-right: 95%;
+
+}
+
+.button label.two{
+
+    float: right;
+    margin-top: -150px;
+
+}
+
+.cards-conteiner input {
+    display: none;
+} 
+
+#two:checked ~ .main-cards{
+    margin-left: -100%;
+}
+
+.produto{
+    position: relative;
+    overflow: hidden; 
+}
+
+.produto img{
+    height: 210px;
+    width: 200px;
+    border-radius: 10px;    
+
+}
+
+.descrisão-produto{   
+    background-color: rgba(27, 27, 27, 0.521);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(57, 55, 55, 0.38);
+
+    position: absolute;
+    bottom: 3px;
+    height: 210px;
+    width: 200px;
+    border-radius: 10px;        
+    text-align: center;
+    opacity: 0;
+}
+
+.descrisão-produto h1{
+    margin-top: 10px;
+    color: rgb(223, 223, 223);
+    transform: rotateY(30px);
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.descrisão-produto p{
+    margin-top: 4px;
+    margin-left: 9%;
+    width: 80%;
+    color: rgb(223, 223, 223);
+    transform: rotateY(30px);
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.produto:hover .descrisão-produto{
+    opacity: 1;
+}
+
+.produto:hover .descrisão-produto p{
+    opacity: 1;
+}
+
+.produto:hover .descrisão-produto h1{
+    opacity: 1;
 }
