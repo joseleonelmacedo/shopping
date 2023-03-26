@@ -1,50 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>cadastro</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='contato.css'>
-    <script src='main.js'></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
 
 </head>
-<body id="cor2">
-    <div id="grade-cadastro">
-        <div id="titulo-senha">
-            <h2>cadastro</h2>
-    </div>
-
-    <div id="position">       
-        <div id="left">
-            <input type="text"  placeholder="e-mail">
-            <input type="password" placeholder="senha">
-            <input type="password" placeholder="confirme sua senha">
-
+<body id="login" > 
+    <div id="menu-top">
+        <div id="menu-top-cont">
+            <a href="login.html">log-in</a>    
+            <a href="../index.html">home</a>            
         </div>
 
-        <div id="rigth">
-            <div>
-                <input type="text" placeholder="nome">
-                <input type="text"  placeholder="sobrenome">
+    </div>
+    <div id="menu-cadastro">
+        <div class="titulo">
+            <h1>sign-up</h1>
+        </div>
+        
+        <div id="cadastro-cont">
+            <div id="texto">
+                <input placeholder="email" id="email" type="text" name="" style="margin-top: 20px;">
+                <input placeholder="password" id="senha" type="password" name="" style="margin-top: 30px;"><br>
+                <input placeholder="repeat-password" id="senha_confirm" type="password" name="" style="margin-top: 30px;" ><br>  
+                <p id="msg_alert"> </p>
+
+            </div> 
+            <div id="personal">
+                
+                <input placeholder="nome" id="nome" type="text" name="" style="margin-top: 20px;">
+                <input placeholder="sobrenome" id="sobrenome" type="text" name="" style="margin-top: 30px;" ><br>  
+                    <div class="wrapper">
+                        <input type="radio" name="select" id="option-1" checked>
+                        <input type="radio" name="select" id="option-2">
+                          <label for="option-1" class="option option-1">
+                            <div class="dot"></div>
+                             <span>male</span>
+                             </label>
+                          <label for="option-2" class="option option-2">
+                            <div class="dot"></div>
+                             <span>female</span>
+                          </label>
+                       </div>
+               
             </div>
-            <br>
-        <div id="genero">  
-         <input type="radio" name="genero" id="escolha-1">
-         <label for="escolha-1">masculino</label>  
-
-         <input type="radio" name="genero" id="escolha-2">
-         <label for="escolha-2">feminino</label> 
-
-         <input type="radio" name="genero" id="escolha-3" >
-         <label for="escolha-3">outro</label>
-        </div> 
-
+             
+            <button class="botão_submit"value="submit"onclick="check_pass()">submit</button>
+        </div>
     </div>
-    <button id="cd">confirm</button>
-    <div>
-        <a href="../index.html" id="menu">Home<i class="fa fa-home"></i></a>
-    </div>
+        <script src="../js/java.js">      
+
+    </script>
 </body>
+
 </html>

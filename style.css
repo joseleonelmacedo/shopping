@@ -76,12 +76,77 @@ header{
 #barra-de-pesquisa input{
     border-style: none;
     margin-top: 20px;
-    margin-left: 25%;
+    margin-left: 30%;
+    padding: 3px;
     border-radius: 3px;
     font-size: 20px;
     height: 25px;
     width: 40%;
 
+}
+
+/* responsabilidade */
+@media (max-width: 950px){
+
+    #barra-de-pesquisa input{
+        border-style: none;
+        margin-top: 20px;
+        margin-left: 20%;
+
+    
+    }
+
+    #menu-seções{
+        width: 60%;
+        height: 100px;
+        margin-top: 350px;
+        margin-left: 10%;
+        display: flex;    
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+}
+
+@media (max-width: 730px){
+
+    #barra-de-pesquisa input{
+        margin-left: 10%;
+    }
+
+    #menu-seções{
+        background: rgba(45, 45, 44, 0.27);
+        border-radius: 13px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(3.7px);
+        -webkit-backdrop-filter: blur(3.7px);    
+        border: 1px solid rgba(45, 45, 44, 0.39);
+    
+        width: 40%;
+        height: 100px;
+        margin-top: 350px;
+        margin-left: 10%;
+        display: flex;    
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+
+}
+
+@media (max-width: 580px){
+
+    #barra-de-pesquisa input{
+        margin-left: 2%;
+
+    
+    }
+
+}
+
+input:focus {
+    outline: none;
+    min-width: 300px;
 }
 
 .conteiners{
@@ -102,7 +167,7 @@ header{
     width: 60%;
     height: 100px;
     margin-top: 350px;
-    margin-left: 15%;
+    margin-left: 20%;
     display: flex;    
     flex-wrap: wrap;
 
@@ -132,10 +197,9 @@ header{
     color: rgb(43, 42, 42);
 }
 
-#seções a:hover{
-    border: solid rgba(255, 0, 0, 0) 1px;
-    color: rgb(43, 42, 42);
-    box-shadow: 13px 0px 23px 2px rgba(0,0,0,0.23);
+#seções a:hover img{
+    border: solid rgba(200, 245, 178, 0.884) 2px;
+    border-radius: 100%;
     
 }
 
